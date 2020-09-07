@@ -21,7 +21,8 @@ export default {
 </script>
 
 <style>
-@import "https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap";
+
 body {
     background-color: #212121 !important;
 }

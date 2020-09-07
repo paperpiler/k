@@ -12,10 +12,9 @@
                     </b-navbar-nav>
 
                     <b-navbar-nav class="mx-auto">
-                        <b-navbar-brand
-                            style="font-family: 'Source Code Pro', monospace !important;"
-                            >VIOLET COMMUNITY ROMS</b-navbar-brand
-                        >
+                        <b-navbar-brand class="header-text">
+                                VIOLET COMMUNITY ROMS
+                            </b-navbar-brand>
                     </b-navbar-nav>
                 </b-collapse>
             </b-navbar>
@@ -35,4 +34,10 @@ export default {
 .navbar.navbar-dark.bg-dark {
     opacity: 0.55;
 }
+
+.header-text {
+    font-family: Source Code Pro;
+    color: aliceblue !important;
+}
+
 </style>

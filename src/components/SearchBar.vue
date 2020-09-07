@@ -1,20 +1,14 @@
 <template>
-    <div id="SearchBar">
-        <b-nav-form class="">
-            <b-form-input
-                size="sm"
-                class="mr-sm-2"
-                placeholder="🔍 Search"
-            ></b-form-input>
-        </b-nav-form>
-
+    <center>
+        <div id="SearchBar">
         <input
             type="text"
-            style="text-align: center"
+            style="font-family: Source Code Pro"
             placeholder="Search..."
             class="rsearch"
         />
     </div>
+    </center>
 </template>
 
 <script>
@@ -25,6 +19,11 @@ export default {
 
 <style scoped>
 .rsearch {
-    border-radius: 14px;
+    border-radius: 10px;
+    width: 550px;
+    height: 50px;
+    margin-top: 150px;
+    border: 0vw;
+    text-indent: 10px;
 }
 </style>
