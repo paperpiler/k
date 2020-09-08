@@ -55,24 +55,22 @@ export default {
             currentpost.splice(2, 0, "**Updated:** " + "__" + updated[1] + "__");
             currentpost = currentpost.join("\n");
 
-            /* remove changelog section 
+            /* remove credits section */
             currentpost = currentpost.split("\n");
             var clAt = -1;
-            alert(currentpost.length());
-            for(var i=0; i<currentpost.length(); i++){
-                alert(currentpost[i]);
-                if(currentpost[i].includes("Changelog")){
-                    alert("uau@")
+            for(var i=0; i<parseInt(currentpost.length); i++){
+                if(currentpost[i].includes("Credit")){
                     clAt = i;
                     break;
                 }
             }
 
             if(clAt != -1){
-                currentpost.splice(clAt, 1);
+                while(!currentpost[clAt]=="")
+                    currentpost.splice(clAt, 1);
             }
 
-            currentpost = currentpost.join("\n");*/
+            currentpost = currentpost.join("\n");
 
             document.getElementById('newformatf').value = currentpost;
         }
@@ -87,7 +85,6 @@ export default {
     height: 500px;
     margin-top: 20px;
     border: 0vw;
-    text-indent: 10px;
     text-align: left;
 }
 
