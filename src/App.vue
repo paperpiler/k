@@ -1,9 +1,7 @@
 <template>
     <div>
         <Navbar />
-        <div>
-            <SearchBar />
-        </div>
+        <SearchBar />
     </div>
 </template>
 

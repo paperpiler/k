@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="viodev-nav">
+    <div class="viodev-nav">
+        <div>
             <b-navbar toggleable="lg" type="dark" variant="dark">
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -11,9 +11,9 @@
                         </b-nav-item>
                     </b-navbar-nav>
 
-                    <b-navbar-nav class="mx-auto">
+                    <b-navbar-nav>
                         <b-navbar-brand class="header-text">
-                                VIOLET COMMUNITY ROMS
+                                FORMAT SWITCHER
                             </b-navbar-brand>
                     </b-navbar-nav>
                 </b-collapse>
@@ -30,6 +30,10 @@ export default {
 
 <style scoped>
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.viodev-nav {
+    width: 100vw;
+}
 
 .navbar.navbar-dark.bg-dark {
     opacity: 0.55;
